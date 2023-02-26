@@ -1,7 +1,7 @@
 /* eslint-disable no-unsafe-optional-chaining */
-const { WhatsAppInstance } = require('../class/instance')
+const { WhatsAppInstance } = require('./instance')
 const logger = require('pino')()
-const config = require('../../config/config')
+const config = require('../config')
 
 class Session {
     async restoreSessions() {

@@ -6,7 +6,7 @@ dotenv.config()
 const app = require('./app')
 const config = require('./config')
 const { Session } = require('./classes/session')
-const connectToCluster = require('.middleware/connectMongoClient')
+const connectToCluster = require('./middleware/connectMongoClient')
 
 let server
 if (config.mongoose.enabled) { // mongodb connection 
